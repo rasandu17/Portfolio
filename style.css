@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    padding: 30px 0;
+    background-color: #022031;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.wrapper .sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.wrapper .sidebar ul {
+    padding: 0;
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wrapper .sidebar ul li a {
+    color: #b8c7ce;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: #0072b4;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: #fff;
+}
+
+.wrapper .sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .content {
+    margin-left: 250px;
+    padding: 40px;
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on content side */
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    padding: 30px 0;
+    background-color: #022031;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-footer {
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #022031;
+}
