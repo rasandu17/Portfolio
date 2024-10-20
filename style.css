@@ -13,7 +13,7 @@ body {
 
 .wrapper {
     display: flex;
-    position: relative;
+    overflow: hidden;
 }
 
 .wrapper .sidebar {
@@ -22,7 +22,7 @@ body {
     height: 100%;
     padding: 30px 0;
     background-color: #022031;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
 }
 
 .wrapper .sidebar h2 {
@@ -62,13 +62,6 @@ body {
     text-decoration: underline;
 }
 
-.wrapper .content {
-    margin-left: 250px;
-    padding: 40px;
-    background-color: #fff;
-    height: 100vh;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on content side */
-}
 
 .wrapper .sidebar {
     position: fixed;
@@ -89,4 +82,43 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     background-color: #022031;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wrapper .main {
+    margin-left: 250px;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.info {
+    margin-left: 12%;
+    margin-top: 10%;
+    color: #022031;
+}
+
+.info h1 {
+    font-size: 135px;
+    margin-bottom: 0;
+}
+
+.info h2 {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; 
+        height: auto;
+        position: relative;
+    }
+    
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
 }
