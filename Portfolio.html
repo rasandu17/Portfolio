@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title> My Web </title>
+   
+    <title>Personal Portfolio Website Using HTML & CSS | Codehal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <ul>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="news.asp">About</a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp">Blog</a></li>
-            </ul>
-            <div class="sidebar-footer">
-                <p>Ravindu Sandumith
-                    <br>Computer Science Undergraduate.</p>
-                </p>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Ravindu</a>
+        <ul>
+            <li class="active"><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Contact</a></li>
+            <li><a href="#"> Blog</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" >
+        <div class="home-info">
+            <h1>Ravindu Sandumith</h1>
+            <h2>Computer Science Undergraduate</h2>
+            <p>I love building innovative solutions, from web development projects to AI-powered applications.
+                 With experience in programming languages like Python, Java, and JavaScript,
+                 I’m constantly exploring new technologies to solve real-world problems. </p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
             </div>
         </div>
-
-    <div class="main">
-        <h1>Hi</h1> 
-		<h2>I'm Ravindu Sandumith</h2>
-		<h3>Computer science undergraduate currently studying at Informatic Institute of Technology.
-		<br>Currently exploring the realms of code and building innovative solutions to real-world problems.
-		<br>Let's connect and collaborate on exciting projects! </h3></div>
-
-    </div>
+    </section>
 
 </body>
+
 </html>
