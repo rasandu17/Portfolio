@@ -258,7 +258,7 @@ contact me page */
     line-height: 1.6;
 }
 
-.container {
+.c_container {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -370,7 +370,7 @@ contact me page */
     color: #fff;
 }
 
-.container{
+.c_container{
     width: 100%;
     display: flex;
     justify-content: center;
