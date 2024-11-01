@@ -360,3 +360,91 @@ contact me page */
 } 
 
 
+
+
+
+.bcontainer{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1f242d;
+    
+}
+
+.bcontainer .blog-section{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.container .blog-section .heading{
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.container .blog-section .heading h1{
+    color: #7cf03d;
+    font-size: 42px;
+    padding-top: 20px;
+}
+
+.blogcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.blogcontent .card{
+    flex: 1;
+    margin: 30px 15px;
+    box-shadow: #1f242da0;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+
+.blogcontent .card .text-title{
+    font-size: 15px;
+    color: #7cf03d;
+    font-weight: 600;
+}
+
+.blogcontent .card span{
+    color: rgba(97, 248, 52, 0.7);
+    font-weight: normal;
+}
+
+.blogcontent .card h4{
+    margin: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.blogcontent .card p{
+    margin: 5px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #aaa;
+}
+
+.readbutton {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #7cf03d;
+    color: #1f242d;
+    border: 2px solid #7cf03d;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.readbutton:hover {
+    background: transparent;
+    color: #62c02d;
+}
