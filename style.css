@@ -361,7 +361,7 @@ contact me page */
 
 
 
-
+/* blog page */
 
 .bcontainer{
     width: 100%;
@@ -370,7 +370,7 @@ contact me page */
     
 }
 
-.bcontainer .blog-section{
+.bcontainer .blog-section, .project-section{
     width: 80%;
     margin: 0px auto;
 }
@@ -406,6 +406,7 @@ contact me page */
     height: 200px; 
     object-fit: cover; 
     border-radius: 8px; 
+    
 }
 
 
@@ -447,4 +448,11 @@ contact me page */
 .readbutton:hover {
     background: transparent;
     color: #62c02d;
+}
+
+ 
+@media screen and (max-width: 768px){
+    .blogcontent{
+        flex-direction: column;
+    }
 }
