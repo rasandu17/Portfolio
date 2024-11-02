@@ -156,9 +156,8 @@ a {
     max-width: 300px;
     height: auto;
     display: block;
-    padding-top: 50px;
-    
-    margin-left: 40px;
+    padding-top: 20px;
+    margin-left: -100px;
 }
 
 .about-image img:hover {
@@ -189,7 +188,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     padding: 0;
     
@@ -241,6 +240,7 @@ aside {
     padding: 1rem;
     border-radius: 10px;
     margin-top: 10px;
+    margin-right: -160px;
     width: 300px;
     
 }
@@ -253,6 +253,19 @@ aside:hover {
 .aside-widget{
     margin-top: 10px;
     width: 300px;
+}
+
+.aside-widget h3 {
+    color: #7cf03d;
+    border-bottom: 2px solid #7cf03d;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.aside-widget ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
 }
 
 
@@ -369,6 +382,15 @@ aside:hover {
 
 /* tab */
 @media (max-width: 821px){
+    .about{
+        flex-direction: column;
+    }
+    .container .about-image img{
+        margin-left: 0;
+        max-width: 100%;
+        padding-top: 10px;
+    }
+    
     .contact{
         padding: 50px;
 
@@ -390,6 +412,8 @@ aside:hover {
 
 /* mobile */
 @media (max-width: 440px){
+    
+
     .contact{
         padding: 50px;
 
