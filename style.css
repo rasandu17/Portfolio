@@ -149,6 +149,7 @@ a {
     flex-direction: column;
     padding: 10px 9%;
     position: relative;
+    
 }
 
 .about-image img {
@@ -156,8 +157,8 @@ a {
     height: auto;
     display: block;
     padding-top: 50px;
-    transition: .5s;
-    padding-right: 10px;
+    
+    margin-left: 40px;
 }
 
 .about-image img:hover {
@@ -191,6 +192,7 @@ a {
     gap: 20px;
     width: 100%;
     padding: 0;
+    
 }
 
 .about-content, .about-image {
@@ -232,6 +234,27 @@ a {
 .experience:last-child::after {
     display: none;
 }
+
+aside {
+    flex: 1;
+    background-color: #2d333b;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 300px;
+    
+}
+
+aside:hover {
+    box-shadow: 0 0 10px rgba(124, 240, 61, 0.2);
+    background: transparent;
+}
+
+.aside-widget{
+    margin-top: 10px;
+    width: 300px;
+}
+
 
 /* Contact Page */
 .contact {
@@ -344,6 +367,52 @@ a {
     box-shadow: 0 0 20px #7cf03d;
 }
 
+/* tab */
+@media (max-width: 821px){
+    .contact{
+        padding: 50px;
+
+    }
+    .c_container{
+        flex-direction: column;
+    }
+    .c_container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .c_container .contactinfo{
+        width: 100%;
+    }
+
+    .contact .content h2{
+        margin-top: 10px;
+    }
+}
+
+/* mobile */
+@media (max-width: 440px){
+    .contact{
+        padding: 50px;
+
+    }
+    .c_container{
+        flex-direction: column;
+    }
+    .c_container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .c_container .contactinfo{
+        width: 100%;
+    }
+
+    .contact .content h2{
+        margin-top: 2000px;
+        font-size: 2000px;
+    }
+   .contact .content p{
+    font-size: 2000px;
+   }
+    
+}
 
 
 
@@ -364,20 +433,6 @@ main {
     margin-top: 100px;
 } 
 
-aside {
-    flex: 1;
-    background-color: #2d333b;
-    padding: 1rem;
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 300px;
-}
-
-aside:hover {
-    box-shadow: 0 0 10px rgba(124, 240, 61, 0.2);
-    background: transparent;
-}
-
 article {
     background-color: #2d333b;
     border-radius: 15px;
@@ -397,8 +452,6 @@ article img{
     width: 100%;
 
 }
-
-
 
 article h2 {
     color: #fff;
@@ -435,13 +488,13 @@ article h2 {
     padding: 1rem;
     border-radius: 10px;
     margin-top: 10px;
+    width: 300px;
 }
-
-
 
 .widget h3 {
     color: #7cf03d;
     border-bottom: 2px solid #7cf03d;
+    width: 200px;
     padding-bottom: 0.5rem;
 }
 
@@ -465,23 +518,3 @@ article h2 {
     color: #7cf03d;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar ul li {
-        margin-left: 20px;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    .blog-content {
-        margin-right: 0;
-    }
-
-    aside {
-        border-left: none;
-        border-top: 1px solid #444;
-        margin-top: 2rem;
-    }
-}
