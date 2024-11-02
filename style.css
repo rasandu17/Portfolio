@@ -104,7 +104,7 @@ a {
     transition: .5s;
 }
 
-.btn:hover, .contact-me:hover { 
+.btn:hover { 
     background: transparent;
     color: #7cf03d;
     box-shadow: none;
@@ -286,6 +286,11 @@ a {
     margin-right: 15px;
 }
 
+.contactinfo .box .icon:hover {
+    text-shadow: rgba(124, 240, 61, 0.5) 0 0 10px;
+}   
+
+
 .contactinfo .box h3 {
     font-size: 18px;
     color: #7cf03d;
@@ -307,6 +312,8 @@ a {
     width: 100%;
     margin-bottom: 15px;
 }
+
+
 
 .contactform .inputbox input,
 .contactform .inputbox textarea {
@@ -337,6 +344,13 @@ a {
     box-shadow: 0 0 20px #7cf03d;
 }
 
+
+
+
+
+
+
+
 /* Blog Page */
 main {
     display: flex;
@@ -354,26 +368,34 @@ aside {
     flex: 1;
     background-color: #2d333b;
     padding: 1rem;
-    border-left: 1px solid #444;
-    box-shadow: #4b566b 0 0 10px;
+    border-radius: 10px;
     margin-top: 100px;
 }
 
+aside:hover {
+    box-shadow: 0 0 10px rgba(124, 240, 61, 0.2);
+    background: transparent;
+}
+
 article {
-    background-color: #1f242d;
-    border: 1px solid #4b566b;
+    background-color: #2d333b;
+    border-radius: 15px;
     padding: 1rem;
     margin-bottom: 2rem;
+   
+}
+
+article:hover {
     box-shadow: 0 0 10px rgba(124, 240, 61, 0.2);
+    background: transparent;
 }
 
 article h2 {
-    color: #7cf03d;
-    margin-top: 0;
+    color: #fff;
 }
 
 .date {
-    color: #888;
+    color: rgba(124, 240, 61, 0.5);
     font-size: 0.9rem;
 }
 
@@ -407,7 +429,7 @@ article h2 {
 
 .widget li {
     margin-bottom: 0.5rem;
-    color: #aaa;
+    color: #fff;
 }
 
 .widget li:hover {
