@@ -1,110 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-   
-    <title>My Blog</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>My Portfolio Blog</title>
 </head>
-
 <body>
     <nav class="navbar">
         <a href="#" class="logo">Ravindu</a>
         <ul>
-            <li class="active"><a href="#"> Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#"> Contact</a></li>
-            <li><a href="#"> Blog</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
     </nav>
 
-    <div class="bcontainer">
-        <div class="blog-section">
-            <div class="heading">
-                <h1>My Blog</h1>
-                 <p> Check out the blog for updates, tips, and stories from my journey in tech and beyond</p>
+    <main>
+        <section class="blog-content">
+            <article>
+                <h2>My First Blog Post</h2>
+                <p class="date">May 1, 2023</p>
+                <p>This is my very first blog post on my new portfolio site! I'm excited to share my journey in web development and design with you all.</p>
+                <a href="#" class="read-more">Read more</a>
+            </article>
+
+            <article>
+                <h2>Learning HTML and CSS</h2>
+                <p class="date">May 15, 2023</p>
+                <p>My journey in learning HTML and CSS has been an exciting one. These fundamental technologies are the backbone of web development, and mastering them opens up a world of possibilities.</p>
+                <a href="#" class="read-more">Read more</a>
+            </article>
+
+            <article>
+                <h2>Portfolio</h2>
+                <p class="date">June 1, 2023</p>
+                <p>Creating a personal portfolio website is an important step for any web developer or designer. It's a place to showcase your skills, projects, and personality to potential clients or employers.</p>
+                <a href="#" class="read-more">Read more</a>
+            </article>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">Building a Portfolio Website</a></li>
+                    <li><a href="#">Learning HTML and CSS</a></li>
+                    <li><a href="#">My First Blog Post</a></li>
+                </ul>
             </div>
-            <div class="blogcontent">
-                <div class="card">
-                    <img src="C:\Users\RAVINDU\Desktop\Advance client\Github\Advance-client-Portfolio\images\figma.png" alt="figmaimage">
-                    <p class="text-title">Figma<span>-September06 2024 </span></p>
-                    <h4>Figma</h4>
-                    <p>Figma is a cloud-based design tool popular for real-time collaboration, allowing multiple designers 
-                        to work together simultaneously.It supports vector graphics, prototyping, and UI design, with a 
-                        wide range of plugins and templates to simplify complex designs.</p>
-                        <a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49" class="readbutton">Read More</a>
-                </div>
-
-                <div class="card">
-                    <img src="C:\Users\RAVINDU\Desktop\Advance client\Github\Advance-client-Portfolio\images\xd.jpg"alt="xdimage">
-                    <p class="text-title">AdobeXd<span>-September06 2024 </span></p>
-                    <h4>AdobeXd</h4>
-                    <p>Adobe XD is a UI/UX design tool that integrates seamlessly with Adobe Creative Cloud apps like Photoshop 
-                        and Illustrator, making it ideal for designers in the Adobe ecosystem. It offers an intuitive interface,
-                         responsive design tools, powerful prototyping, and a range of plugins and integrations.</p>
-                        <a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49" class="readbutton">Read More</a>
-                </div>
-
-                <div class="card">
-                    <img src="C:\Users\RAVINDU\Desktop\Advance client\Github\Advance-client-Portfolio\images\invision.png"alt="invision">
-                    <p class="text-title">InVision Studio<span>-September06 2024 </span></p>
-                    <h4>InVision Studio</h4>
-                    <p>InVision Studio combines design, prototyping, and collaboration in one powerful platform. It’s particularly strong
-                         in interactive prototyping, allowing designers to create advanced animations and transitions easily.
-                        InVision Studio’s design tools are complemented by its cloud-based collaboration features, which enable design 
-                        teams to share feedback and iterate quickly.</p>
-                        <a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49" class="readbutton">Read More</a>
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-
-        <div class="project-section">
-            <div class="heading">
-                <h1>My Projects</h1>
-                 <p>Discover my work! Here’s a showcase of projects I've created, 
-                each reflecting my skills and passion for innovative solutions.</p>
-            </div>
-            <div class="blogcontent">
-                <div class="card">
-                    <img src="C:\Users\RAVINDU\Desktop\Advance client\Github\Advance-client-Portfolio\images\financetracker.png" alt="financetracker">
-                    <p class="text-title">Finance Tracker GUI<span>-May05 2024 </span></p>
-                    <h4>Finance Tracker</h4>
-                    <p>The Finance Tracker is a tool for managing personal finances, allowing users to add, 
-                        view, and organize transactions. It features both a command-line and GUI version,
-                        providing an easy way to track spending and review financial data.</p>
-                        <a href="https://github.com/rasandu17/Finance-Tracker-GUI" class="readbutton">View Project</a>
-                </div>
-
-                <div class="card">
-                    <img src="C:\Users\RAVINDU\Desktop\Advance client\Github\Advance-client-Portfolio\images\tourup.png"alt="tourup">
-                    <p class="text-title">TourUp<span>-May18 2024 </span></p>
-                    <h4>TourUp</h4>
-                    <p>TourUp is a Figma-designed user interface for a Sri Lankan tourism website that provides an engaging and visually appealing 
-                        experience for users to explore Sri Lanka’s attractions, travel tips, and cultural insights.</p>
-                        <a href="https://www.figma.com/proto/SrdJNDsG2qrTGvOgeVHNON/Tourup-Web?page-id=0%3A1&node-id=11-7&starting-point-node-id=11%3A7&t=gMoKXWQpWqrVcror-1" class="readbutton">View Project</a>
-                </div>
-
-                <div class="card">
-                    <img src="C:\Users\RAVINDU\Desktop\Advance client\Github\Advance-client-Portfolio\images\ecohabbit.png" alt="ecohabbit">
-                    <p class="text-title">Eco Habbit<span>-August26 2024 </span></p>
-                    <h4>Eco Habbit</h4>
-                    <p>EcoHabit is a mobile app UI designed in Figma to encourage eco-friendly habits, including tree planting and sustainable
-                         living practices. It offers a user-friendly interface to help users adopt greener lifestyles and track their 
-                         impact on the environment.</p>
-                        <a href="https://www.figma.com/proto/r1XqJ9cmz2KiQK4LEo7LdI/creative-corner?page-id=0%3A1&node-id=1-3&starting-point-node-id=76%3A15&t=PGn1NllUY76ZVWjJ-1" class="readbutton">View Project</a>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    
-    
+        </aside>
+    </main>
 </body>
+</html>

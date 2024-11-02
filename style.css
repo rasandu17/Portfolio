@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +11,19 @@
 body {
     background: #1f242d;
     color: #fff;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
-.navbar{
+
+/* Navbar */
+.navbar {
     position: fixed;
     left: 0;
     top: 0;
@@ -27,7 +35,7 @@ a{
     align-items: center;
     z-index: 100;
     background: #1f242d;
-    box-shadow:#4b566b 0 0 10px;
+    box-shadow: #4b566b 0 0 10px;
 }
 
 .navbar .logo {
@@ -38,22 +46,25 @@ a{
 .navbar ul {
     display: flex;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     margin-left: 35px;
-
 }
-.navbar ul li a{
+
+.navbar ul li a {
     font-size: 20px;
     font-weight: 500;
     transition: .5s;
 }
-.navbar ul li a:hover,
-.navbar ul li a.active{
-    color: #7cf03d;
 
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #7cf03d;
 }
-.home, .about{
+
+/* Homepage and About */
+.home, .about {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -61,22 +72,25 @@ a{
     color: #fff;
 }
 
-.home-info h1, .about h1{
+.home-info h1, .about h1 {
     font-size: 55px;
 }
 
-.home-info h2 , about-content h1{
+.home-info h2, .about-content h1 {
     font-size: 32px;
     margin-top: -10px;
 }
-.home-info p,.about-content p {
+
+.home-info p, .about-content p {
     font-size: 16px;
     margin: 10px 0 25px;
 }
-.home-info .btn-sci{
+
+.home-info .btn-sci {
     display: flex;
     align-items: center;
 }
+
 .btn, .contact-me { 
     display: inline-block;
     padding: 10px 30px;
@@ -112,24 +126,22 @@ a{
     box-shadow: 0 0 10px #7cf03d;
 }
 
-
-
-/* about page */
+/* About Section */
 .heading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 10px auto; 
-    
+    margin: 10px auto;
 }
 
-.heading h1{
+.heading h1 {
     margin-top: 110px;
     color: #7cf03d;
     font-size: 34px;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -139,21 +151,20 @@ a{
     position: relative;
 }
 
-.about-image img{
+.about-image img {
     max-width: 300px;
     height: auto;
     display: block;
     padding-top: 50px;
     transition: .5s;
     padding-right: 10px;
-    
 }
 
-.about-image img:hover{
+.about-image img:hover {
     transform: scale(1.1);
 }
 
-.contact-me{
+.contact-me {
     display: inline-block;
     padding: 10px 30px;
     background: #7cf03d;
@@ -165,47 +176,39 @@ a{
     font-weight: 600;
     transition: .5s;
     margin-top: 1%;
-
 }
 
-.contact-me:hover{
+.contact-me:hover {
     background: transparent;
     color: #7cf03d;
     box-shadow: none;
 }
+
 .about {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 20px;
     width: 100%;
-    padding: 0; 
+    padding: 0;
 }
 
 .about-content, .about-image {
     margin: 0;
     padding: 0;
 }
-.heading {
-    margin: 0;
-    padding: 0;
-}
 
-.about-image {
-    margin: 0;
-    padding: 0;
-}
-
-.timeline{
+.timeline {
     margin-top: 60px;
 }
 
-.experience{
+.experience {
     position: relative;
     padding-left: 30px;
     margin-bottom: 30px;
 }
-.experience::before{
+
+.experience::before {
     content: '';
     position: absolute;
     left: 0;
@@ -215,7 +218,8 @@ a{
     border-radius: 50%;
     background-color: #7cf03d;
 }
-.experience::after{
+
+.experience::after {
     content: '';
     position: absolute;
     left: 7px;
@@ -225,19 +229,13 @@ a{
     background-color: #7cf03d;
 }
 
-.experience:last-child::after{
+.experience:last-child::after {
     display: none;
 }
 
-
-
-
-/* 
-
-contact me page */
-
-.contact{
-    margin-top:50px;
+/* Contact Page */
+.contact {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,16 +244,17 @@ contact me page */
     background-color: #1f242d;
 }
 
-.contact .content{
+.contact .content {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.contact .content h2{
+.contact .content h2 {
     font-size: 34px;
     color: #7cf03d;
     margin-bottom: 15px;
 }
+
 .contact .content p {
     font-size: 15px;
     line-height: 1.6;
@@ -270,40 +269,28 @@ contact me page */
     max-width: 1100px;
 }
 
-.contactinfo, .contactform{
+.contactinfo, .contactform {
     flex: 1;
     min-width: 280px;
 }
 
-.contactinfo .box{
+.contactinfo .box {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
 }
 
-.contactinfo .box .icon{
+.contactinfo .box .icon {
     font-size: 28px;
     color: #7cf03d;
     margin-right: 15px;
 }
 
-.contactinfo .box .icon:hover{
-    color: #7cf03d;
-    text-shadow: 0 0 10px #7cf03d;
-    
-}
-
-.contactinfo .box h3{
+.contactinfo .box h3 {
     font-size: 18px;
     color: #7cf03d;
     margin-bottom: 5px;
 }
-
-.contactinfo .box h3:hover{
-    color: #fff;
-    text-shadow: 0 0 10px #7cf03d;
-}
-
 
 .contactinfo .box .text p {
     font-size: 14px;
@@ -322,24 +309,15 @@ contact me page */
 }
 
 .contactform .inputbox input,
-.contactform .inputbox textarea{
+.contactform .inputbox textarea {
     width: 100%;
     padding: 12px;
     font-size: 15px;
     color: #fff;
-    background:  #2d333b;
+    background: #2d333b;
     border: none;
     outline: none;
     resize: none;
-}
-
-.contactform .inputbox span {
-    position: absolute;
-    left: 12px;
-    top: 12px;
-    color: #aaa;
-    pointer-events: none;
-    transition: 0.4s;
 }
 
 .contactform .inputbox input[type="submit"] {
@@ -357,102 +335,102 @@ contact me page */
     color: #7cf03d;
     border: 2px solid #7cf03d;
     box-shadow: 0 0 20px #7cf03d;
-} 
-
-
-
-/* blog page */
-
-.bcontainer{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #1f242d;
-    
 }
 
-.bcontainer .blog-section, .project-section{
-    width: 80%;
-    margin: 0px auto;
-}
-
-.container .blog-section .heading{
-    width: 60%;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.container .blog-section .heading h1{
-    color: #7cf03d;
-    font-size: 42px;
-    padding-top: 20px;
-}
-
-.blogcontent{
+/* Blog Page */
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.blogcontent .card{
+.blog-content {
+    flex: 3;
+    margin-right: 2rem;
+    padding-top: 100px;
+}
+
+aside {
     flex: 1;
-    margin: 30px 15px;
-    box-shadow: #1f242da0;
+    background-color: #2d333b;
+    padding: 1rem;
+    border-left: 1px solid #444;
+    box-shadow: #4b566b 0 0 10px;
+    margin-top: 100px;
 }
 
-.card img {
-    width: 100%;
-    max-width: 300px; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    
+article {
+    background-color: #1f242d;
+    border: 1px solid #4b566b;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(124, 240, 61, 0.2);
 }
 
-
-.blogcontent .card .text-title{
-    font-size: 15px;
+article h2 {
     color: #7cf03d;
+    margin-top: 0;
+}
+
+.date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #7cf03d;
+    color: #1f242d;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
     font-weight: 600;
+    transition: 0.3s;
 }
 
-.blogcontent .card span{
-    color: rgba(97, 248, 52, 0.7);
-    font-weight: normal;
+.read-more:hover {
+    background-color: transparent;
+    color: #7cf03d;
+    border: 1px solid #7cf03d;
+    box-shadow: 0 0 10px #7cf03d;
 }
 
-.blogcontent .card h4{
-    margin: 5px 10px;
-    font-size: 16px;
-    color: #fff;
+.widget h3 {
+    color: #7cf03d;
+    border-bottom: 2px solid #7cf03d;
+    padding-bottom: 0.5rem;
 }
 
-.blogcontent .card p{
-    margin: 5px 10px;
-    font-size: 14px;
-    line-height: 1.5;
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget li {
+    margin-bottom: 0.5rem;
     color: #aaa;
 }
 
-.readbutton {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #7cf03d;
-    color: #1f242d;
-    border: 2px solid #7cf03d;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.widget li:hover {
+    color: #7cf03d;
 }
 
-.readbutton:hover {
-    background: transparent;
-    color: #62c02d;
-}
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul li {
+        margin-left: 20px;
+    }
 
- 
-@media screen and (max-width: 768px){
-    .blogcontent{
+    main {
         flex-direction: column;
+    }
+
+    .blog-content {
+        margin-right: 0;
+    }
+
+    aside {
+        border-left: none;
+        border-top: 1px solid #444;
+        margin-top: 2rem;
     }
 }
