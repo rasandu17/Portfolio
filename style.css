@@ -12,9 +12,10 @@ body {
     background: #1f242d;
     color: #fff;
     line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    /* max-width: 1200px; */
+    margin: 0 ;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 a {
@@ -84,6 +85,33 @@ a {
     background-color: #7cf03d;
 }
 
+footer {
+    background-color: #4b566b; 
+    padding: 20px 0; 
+    text-align: center; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: auto;
+    width: 100%;
+     
+}
+
+footer .text {
+    color: #fff; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+}
+
+footer .text a {
+    color: #76FF03;
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+footer .text a:hover {
+    color: #76FF03; 
+    text-decoration: underline; 
+}
 /* Homepage and About */
 .home, .about {
     display: flex;
@@ -414,6 +442,11 @@ aside:hover {
         padding-top: 10px;
     }
     
+    footer {
+        margin-top: 800px;
+        
+         
+    }
     .contact{
         padding: 50px;
 
@@ -431,35 +464,76 @@ aside:hover {
     .contact .content h2{
         margin-top: 10px;
     }
+    .contact-footer{
+        margin-top: auto;
+    }
+
 }
 
-/* mobile */
-@media (max-width: 440px){
+@media (max-width: 768px) {
+    .navbar {
+        padding: 25px 5%;
+    }
+
+    .navbar ul li {
+        margin-left: 20px;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+
+    .home-info h1 {
+        font-size: 40px;
+    }
+
+    .home-info h2 {
+        font-size: 24px;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .home-info .btn-sci {
+        display: block;
+        align-items: center;
+    }
+    .sci a { 
+        margin-top: 30px;
+    }
     
-
-    .contact{
-        padding: 50px;
-
-    }
-    .c_container{
-        flex-direction: column;
-    }
-    .c_container .contactinfo{
-        margin-bottom: 40px;
-    }
-    .c_container .contactinfo{
-        width: 100%;
+    
+    .about h1 {
+        font-size: 40px;
     }
 
-    .contact .content h2{
-        margin-top: 2000px;
-        font-size: 2000px;
+    .about-content h1 {
+        font-size: 24px;
     }
-   .contact .content p{
-    font-size: 2000px;
-   }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .btn, .contact-me {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .sci a {
+        padding: 6px;
+        font-size: 16px;
+    }
+
+    
     
 }
+
+
+
+
+
 
 
 
