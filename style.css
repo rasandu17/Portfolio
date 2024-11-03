@@ -63,6 +63,27 @@ a {
     color: #7cf03d;
 }
 
+.navbar li {
+    position: relative;
+}
+.navbar li:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s;
+}
+
+.navbar li:nth-child(1):hover::after,
+.navbar li:nth-child(2):hover::after,
+.navbar li:nth-child(3):hover::after,
+.navbar li:nth-child(4):hover::after {
+    background-color: #7cf03d;
+}
+
 /* Homepage and About */
 .home, .about {
     display: flex;
@@ -198,6 +219,8 @@ a {
     margin: 0;
     padding: 0;
 }
+
+
 
 .timeline {
     margin-top: 60px;
@@ -480,6 +503,8 @@ article img{
 article h2 {
     color: #fff;
 }
+
+
 
 .date {
     color: rgba(124, 240, 61, 0.5);
