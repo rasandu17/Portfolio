@@ -35,7 +35,7 @@ a {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: #1f242d;
+    background: linear-gradient(to right, #1f242d, #2d333b);
     box-shadow: #4b566b 0 0 10px;
 
 }
@@ -43,6 +43,8 @@ a {
 .navbar .logo {
     font-size: 30px;
     font-weight: 700;
+    
+
 }
 
 
@@ -51,7 +53,7 @@ a {
     display: flex;
 }
 
-.navbar ul li {
+.navbar > ul > li {
     list-style: none;
     margin-left: 35px;
 }
@@ -115,12 +117,27 @@ footer .text a:hover {
     text-decoration: underline;
 }
 /* Homepage and About */
+
 .home, .about {
     display: flex;
     align-items: center;
     height: 100vh;
     padding: 60px 9% 0;
     color: #fff;
+}
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.home-info {
+    animation: fadeIn 1s ease-in;
 }
 
 .home-info h1, .about h1 {
@@ -178,6 +195,11 @@ footer .text a:hover {
 }
 
 /* About Section */
+@keyframes glowing {
+    0% { text-shadow: 0 0 5px #7cf03d; }
+    50% { text-shadow: 0 0 10px #7cf03d }
+    
+}
 .heading {
     display: flex;
     justify-content: center;
@@ -185,6 +207,9 @@ footer .text a:hover {
     flex-direction: column;
     text-align: center;
     margin: 10px auto;
+    text-shadow: 2px 2px 4px rgba(124, 240, 61, 0.3);
+    animation: glowing 5s infinite;
+       
 }
 
 .heading h1 {
@@ -192,6 +217,7 @@ footer .text a:hover {
     color: #7cf03d;
     font-size: 34px;
 }
+
 
 .container {
     display: flex;
@@ -227,6 +253,8 @@ footer .text a:hover {
     font-weight: 600;
     transition: .5s;
     margin-top: 1%;
+    margin-bottom: 20px;
+    
 }
 
 .contact-me:hover {
@@ -250,7 +278,9 @@ footer .text a:hover {
     margin: 0;
     padding: 0;
 }
-
+.about-content {
+    animation: fadeIn 1.5s ease-out;
+}
 
 
 .timeline {
@@ -288,6 +318,8 @@ footer .text a:hover {
     display: none;
 }
 
+
+
 aside {
     flex: 1;
     background-color: #2d333b;
@@ -305,6 +337,7 @@ aside:hover {
 }
 
 .aside-widget{
+    margin-right: 800px;
     margin-top: 10px;
     width: 300px;
 }
@@ -350,11 +383,14 @@ aside:hover {
     font-size: 34px;
     color: #7cf03d;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(124, 240, 61, 0.3);
+    animation: glowing 5s infinite;
 }
 
 .contact .content p {
     font-size: 15px;
     line-height: 1.6;
+    animation: glowing 5s infinite;
 }
 
 .c_container {
@@ -404,13 +440,12 @@ aside:hover {
     margin-bottom: 20px;
 }
 
+
 .contactform .inputbox {
     position: relative;
     width: 100%;
     margin-bottom: 15px;
 }
-
-
 
 .contactform .inputbox input,
 .contactform .inputbox textarea {
@@ -440,6 +475,13 @@ aside:hover {
     border: 2px solid #7cf03d;
     box-shadow: 0 0 20px #7cf03d;
 }
+.contactform input:valid {
+    border-bottom: 2px solid #7cf03d;
+}
+
+.contactform input:invalid {
+    border-bottom: 2px solid #ff4444;
+}
 
 
 /* Blog Page */
@@ -447,6 +489,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .blog-content {
@@ -454,12 +497,27 @@ main {
     margin-right: 2rem;
     margin-top: 100px;
 } 
+.blog-content article:first-of-type {
+    border-top: 3px solid #7cf03d;
+}
+.blog-content article:sec-of-type {
+    border-top: 3px solid #7cf03d;
+}
+
+
+.blog-content article:nth-child(odd) {
+    background-color: rgba(45, 51, 59, 0.8);
+}
 
 article {
     background-color: #2d333b;
     border-radius: 15px;
     padding: 1rem;
+    margin-left: 20px;
     margin-bottom: 2rem;
+    display: grid;
+    place-items: center;
+    
    
 }
 
@@ -471,12 +529,16 @@ article:hover {
 article img{
     border-radius: 10px;
     margin-top: 10px;
-    width: 100%;
+    width: 500px;
+    margin-bottom: 10px;
+    
 
 }
 
 article h2 {
     color: #fff;
+    text-transform: uppercase;
+
 }
 
 
@@ -484,6 +546,7 @@ article h2 {
 .date {
     color: rgba(124, 240, 61, 0.5);
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 .read-more {
@@ -506,6 +569,7 @@ article h2 {
 }
 
 
+
 .widget{
     flex: 1;
     background-color: #2d333b;
@@ -513,6 +577,9 @@ article h2 {
     border-radius: 10px;
     margin-top: 10px;
     width: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .widget h3 {
@@ -689,7 +756,23 @@ article h2 {
         padding: 6px;
         font-size: 16px;
     }
-      
+    
+    article img{
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 100%;
+        
+    
+    }
 }
 
+.navbar ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.contactform input:not([type="submit"]) {
+    background: #2d333b;
+    color: #fff;
+}
 
