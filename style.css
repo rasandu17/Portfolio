@@ -96,32 +96,26 @@ a {
 
 footer {
     background-color: #4b566b;
-    position: relative; 
-    padding: 20px 0; 
-    text-align: center; 
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
     width: 100%;
-    bottom: 0;
-     
 }
 
 footer .text {
-    color: #fff; 
-    font-size: 14px; 
-    font-family: Arial, sans-serif; 
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
 footer .text a {
     color: #76FF03;
-    text-decoration: none; 
-    font-weight: bold; 
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer .text a:hover {
-    color: #76FF03; 
-    text-decoration: underline; 
+    color: #76FF03;
+    text-decoration: underline;
 }
 /* Homepage and About */
 .home, .about {
@@ -248,6 +242,7 @@ footer .text a:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex: 1;
     gap: 50px;
     width: 100%;
     padding: 0;
@@ -340,8 +335,15 @@ aside:hover {
     padding: 60px 10%;
     color: #fff;
     background-color: #1f242d;
+    flex: 1;
 }
-
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
 .contact .content {
     text-align: center;
     margin-bottom: 30px;
@@ -444,6 +446,11 @@ aside:hover {
 
 
 
+
+
+
+
+
 /* tab */
 @media (max-width: 821px){
     .about{
@@ -463,9 +470,14 @@ aside:hover {
         color: #fff;
     }
 
-    .footer{
-        margin-bottom: 0;
+    footer {
+        padding: 20px;
+        text-align: center;
     }
+    .contact {
+        flex-direction: column;
+    }
+
     .contact{
         padding: 50px;
 
