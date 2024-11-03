@@ -37,6 +37,7 @@ a {
     z-index: 100;
     background: #1f242d;
     box-shadow: #4b566b 0 0 10px;
+
 }
 
 .navbar .logo {
@@ -84,15 +85,25 @@ a {
 .navbar li:nth-child(4):hover::after {
     background-color: #7cf03d;
 }
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
 
 footer {
-    background-color: #4b566b; 
+    background-color: #4b566b;
+    position: relative; 
     padding: 20px 0; 
     text-align: center; 
     margin-left: 0;
     margin-right: 0;
     margin-top: auto;
     width: 100%;
+    bottom: 0;
      
 }
 
@@ -431,6 +442,8 @@ aside:hover {
     box-shadow: 0 0 20px #7cf03d;
 }
 
+
+
 /* tab */
 @media (max-width: 821px){
     .about{
@@ -442,10 +455,16 @@ aside:hover {
         padding-top: 10px;
     }
     
-    footer {
-        margin-top: 800px;
-        
-         
+    .home {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 60px 9% 0;
+        color: #fff;
+    }
+
+    .footer{
+        margin-bottom: 0;
     }
     .contact{
         padding: 50px;
@@ -462,13 +481,33 @@ aside:hover {
     }
 
     .contact .content h2{
-        margin-top: 10px;
+        margin-top: 50px;
     }
-    .contact-footer{
-        margin-top: auto;
+    .navbar ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #1f242d;
+        gap: 0;
+        overflow: hidden;
     }
-
+    .navbar ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
 }
+    
+
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -478,6 +517,28 @@ aside:hover {
     .navbar ul li {
         margin-left: 20px;
     }
+    .navbar ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #1f242d;
+        gap: 0;
+        overflow: hidden;
+    }
+    .navbar ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+
 
     footer{
         margin-top: auto;
@@ -525,9 +586,7 @@ aside:hover {
         padding: 6px;
         font-size: 16px;
     }
-
-    
-    
+      
 }
 
 

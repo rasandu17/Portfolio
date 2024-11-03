@@ -13,13 +13,16 @@
 
     <nav class="navbar">
         <a href="Portfolio.html" class="logo">Ravindu</a>
-        <ul>
+        <ul id="menuList">
             <li ><a href="Portfolio.html" class="active"> Home</a></li>
-            <li><a href="about.html"> About</a></li>
+            <li><a href="about.html" > About</a></li>
             <li><a href="contact.html"> Contact</a></li>
             <li><a href="blog.html"> Blog</a></li>
             
         </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
     </nav>
 
     <section class="home" >
@@ -40,6 +43,24 @@
             </div>
         </div>
     </section>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+
     <footer>
         <div class="text">
             <span>Created By
