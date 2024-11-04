@@ -5,34 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <!-- Boxicons CSS for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navbar section -->
     <nav class="navbar">
         <a href="Portfolio.html" class="logo">Ravindu</a>
         <ul id="menuList">
-            <li ><a href="Portfolio.html" > Home</a></li>
-            <li><a href="about.html" class="active"> About</a></li>
-            <li><a href="contact.html"> Contact</a></li>
-            <li><a href="blog.html"> Blog</a></li>
-            
+            <li><a href="Portfolio.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
+
+    <!-- Heading section -->
     <div class="heading">
         <h1>About me</h1>
-        <p>Im a computer science undergraduate.</p>
+        <p>I'm a computer science undergraduate.</p>
     </div>
+
+    <!-- Main container -->
     <div class="container">
         <section class="about">
+            <!-- About image -->
             <div class="about-image">
                 <img src="myimage.jpg" alt="myimage">
-
             </div>
+            <!-- About content -->
             <div class="about-content">
                 <h2>More about me...</h2>
                 <p>I studied at Royal College Colombo and completed a foundation certificate at Informatics Institute of Technology. 
@@ -40,46 +47,39 @@
                     which is affiliated with the University of Westminster. I’m learning web development, 
                     programming languages like Java and Python, UI/UX, and designing innovative solutions. 
                     I'm excited to apply my skills to create useful tech solutions.</p>
-                    <div class="timeline">
-                        <div class="experience">
-                            <p class="experiencedate">2023 - present</p>
-                            <h3 class="experiencetitle">IIT | UNIVERSITY OF WESTMINSTER</h3>
-                           
-                        </div>
-                        <div class="experience">
-                            <p class="experiencedate">2023 May - 2023 December</p>
-                            <h3 class="experiencetitle">Foundation Certificate at IIT</h3>
-                            
-                        </div>
-                        <div class="experience">
-                            <p class="experiencedate">2015 - 2019</p>
-                            <h3 class="experiencetitle">GCE OL at Royal College Colombo 7</h3>
-                           
-                        </div>
+                <!-- Timeline section -->
+                <div class="timeline">
+                    <div class="experience">
+                        <p class="experiencedate">2023 - present</p>
+                        <h3 class="experiencetitle">IIT | UNIVERSITY OF WESTMINSTER</h3>
                     </div>
+                    <div class="experience">
+                        <p class="experiencedate">2023 May - 2023 December</p>
+                        <h3 class="experiencetitle">Foundation Certificate at IIT</h3>
+                    </div>
+                    <div class="experience">
+                        <p class="experiencedate">2015 - 2019</p>
+                        <h3 class="experiencetitle">GCE OL at Royal College Colombo 7</h3>
+                    </div>
+                </div>
                 <a href="contact.html" class="contact-me">Contact me</a>    
             </div>
 
+            <!-- Aside section -->
             <aside>
                 <div class="aside-widget">
                     <h3>My Projects</h3>
                     <ul>
-                        
-                        <li><a href="https://github.com/rasandu17/Finance-Tracker-GUI">
-                            Personal Finanace Tracker</a></li>
-                        <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">
-                            TourUp FigmaUi</a></li>
-                        <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">
-                            EcoHabbit FigmaUi</a></li>
+                        <li><a href="https://github.com/rasandu17/Finance-Tracker-GUI">Personal Finance Tracker</a></li>
+                        <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">TourUp FigmaUi</a></li>
+                        <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">EcoHabbit FigmaUi</a></li>
                     </ul>
-                    
                     
                     <h3>My Skills</h3>
                     <ul>
-                        
                         <li>Python</li>
                         <li>Java</li>
-                        <li>HTML,CSS,JavaScript</li>
+                        <li>HTML, CSS, JavaScript</li>
                         <li>UI/UX</li>
                         <li>Mobile development</li>
                     </ul>
@@ -88,6 +88,7 @@
         </section>
     </div>
 
+    <!-- JavaScript for menu toggle -->
     <script>
         let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
@@ -101,9 +102,11 @@
                 menuList.style.maxHeight = "0px";
             }
         }
-        
     </script>
+    <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+    <!-- Footer section -->
     <footer>
         <div class="text">
             <span>Created By
@@ -114,4 +117,3 @@
 </body>
 
 </html>
-    

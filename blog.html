@@ -7,27 +7,30 @@
     <title>My Blog</title>
 </head>
 <body>
+    <!-- Navbar section -->
     <nav class="navbar">
         <a href="Portfolio.html" class="logo">Ravindu</a>
         <ul id="menuList">
-            <li ><a href="Portfolio.html" > Home</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="contact.html"> Contact</a></li>
-            <li><a href="blog.html" class="active"> Blog</a></li>
-            
+            <li><a href="Portfolio.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
 
+    <!-- Heading section -->
     <div class="heading">
         <h1>My Blog</h1>
         <p>Check out the blog for updates, tips, and stories from my journey in tech and beyond.</p>
     </div>
+
+    <!-- Main content section -->
     <main>
         <section class="blog-content">
-           
+            <!-- Blog article 1 -->
             <article>
                 <h2>Figma</h2>
                 <time datetime="2024-09-06" class="date">September 6, 2024</time>
@@ -38,6 +41,7 @@
                 <a href="#" class="read-more">Read more</a>
             </article>
 
+            <!-- Blog article 2 -->
             <article>
                 <h2>AdobeXd</h2>
                 <time datetime="2024-09-06" class="date">September 6, 2024</time>
@@ -48,6 +52,7 @@
                 <a href="#" class="read-more">Read more</a>
             </article>
 
+            <!-- Blog article 3 -->
             <article>
                 <h2>REST APIs: The Backbone of Modern Web Communication</h2>
                 <time datetime="2024-09-09" class="date">September 9, 2024</time>
@@ -59,20 +64,21 @@
             </article>
         </section>
 
-        
-            <div class="widget">
-                <h3>More Articles</h3>
-                <ul>
-                    <li><a href="https://medium.com/@rasandu17/rest-apis-the-backbone-of-modern-web-communication-f3ab2212ceb0">
-                        The Key Ingredients of a REST API</a></li>
-                    <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">
-                        InVision Studio</a></li>
-                    <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">
-                        Affinity Designer</a></li>
-                </ul>
-            </div>
-        
+        <!-- Sidebar widget section -->
+        <div class="widget">
+            <h3>More Articles</h3>
+            <ul>
+                <li><a href="https://medium.com/@rasandu17/rest-apis-the-backbone-of-modern-web-communication-f3ab2212ceb0">
+                    The Key Ingredients of a REST API</a></li>
+                <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">
+                    InVision Studio</a></li>
+                <li><a href="https://medium.com/@rasandu17/the-best-ui-design-tools-to-elevate-your-design-38907b4d5f49">
+                    Affinity Designer</a></li>
+            </ul>
+        </div>
     </main>
+
+    <!-- JavaScript for menu toggle -->
     <script>
         let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
@@ -86,10 +92,11 @@
                 menuList.style.maxHeight = "0px";
             }
         }
-        
     </script>
+    <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 
+    <!-- Footer section -->
     <footer>
         <div class="text">
             <span>Created By

@@ -5,44 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <!-- Boxicons CSS for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navbar section -->
     <nav class="navbar">
         <a href="Portfolio.html" class="logo">Ravindu</a>
         <ul id="menuList">
-            <li ><a href="Portfolio.html" class="active"> Home</a></li>
-            <li><a href="about.html" > About</a></li>
-            <li><a href="contact.html"> Contact</a></li>
-            <li><a href="blog.html"> Blog</a></li>
-            
+            <li><a href="Portfolio.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
 
-    <section class="home" >
+    <!-- Home section -->
+    <section class="home">
         <div class="home-info">
             <h1>Ravindu Sandumith</h1>
             <h2>Computer Science Undergraduate</h2>
             <p>I love building innovative solutions, from web development projects to AI-powered applications.
                  With experience in programming languages like Python, Java, and JavaScript,
-                 I’m constantly exploring new technologies to solve real-world problems. </p>
+                 I’m constantly exploring new technologies to solve real-world problems.</p>
             <div class="btn-sci">
                 <a href="#" class="btn">Download CV</a>
                 <div class="sci">
                     <a href="https://github.com/rasandu17"><i class='bx bxl-github'></i></a>
                     <a href="https://www.linkedin.com/in/ravindu-sandumith-240152325/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="rasandu17@gmail.com"><i class='bx bxl-gmail' ></i></a>
+                    <a href="rasandu17@gmail.com"><i class='bx bxl-gmail'></i></a>
                     <a href="https://medium.com/@rasandu17"><i class='bx bxl-medium'></i></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- JavaScript for menu toggle -->
     <script>
         let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
@@ -56,15 +61,15 @@
                 menuList.style.maxHeight = "0px";
             }
         }
-        
     </script>
+    <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 
-
+    <!-- Footer section -->
     <footer>
         <div class="text">
             <span>Created By
-                <a href="#">Ravindu</a>
+                <a href="Portfolio.html">Ravindu</a>
                 &#169; 2024 All Rights Reserved</span> 
         </div> 
     </footer>
@@ -72,5 +77,3 @@
 </body>
 
 </html>
-
-

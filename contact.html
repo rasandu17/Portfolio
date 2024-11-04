@@ -5,36 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <!-- Boxicons CSS for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navbar section -->
     <nav class="navbar">
         <a href="Portfolio.html" class="logo">Ravindu</a>
         <ul id="menuList">
-            <li ><a href="Portfolio.html" > Home</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="contact.html" class="active"> Contact</a></li>
-            <li><a href="blog.html"> Blog</a></li>
-            
+            <li><a href="Portfolio.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
         <div class="menu-icon">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
     </nav>
 
+    <!-- Main content wrapper -->
     <div class="content-wrapper">
         <section class="contact">
             <div class="content">
                 <h2>Contact me</h2>
                 <p>Feel free to get in touch! Fill out the form below with your details and message, 
                     and I’ll get back to you as soon as possible.</p>
-
             </div>
             <div class="c_container">
+                <!-- Contact information section -->
                 <div class="contactinfo">
                     <div class="box">
                         <div class="icon">
@@ -42,40 +44,37 @@
                         </div>
                         <div class="text">
                             <h3>Address</h3>
-                            <p>40/1,temple road,kalubowila.</p>
+                            <p>40/1, Temple Road, Kalubowila.</p>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"><i class='bx bx-envelope' ></i></div>
+                        <div class="icon"><i class='bx bx-envelope'></i></div>
                         <div class="text">
                             <h3>Email</h3>
                             <p>rasandu17@gmail.com</p>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"><i class='bx bxs-phone' ></i></i></div>
+                        <div class="icon"><i class='bx bxs-phone'></i></div>
                         <div class="text">
                             <h3>Phone</h3>
                             <p>077-6082132</p>
                         </div>
                     </div>
-                    
                 </div>
                 
+                <!-- Contact form section -->
                 <div class="contactform">
-                    <form >
+                    <form>
                         <h2>Send Message</h2>
                         <div class="inputbox">
                             <input type="text" name="fullname" placeholder="Full name" required>
-                            
                         </div>
                         <div class="inputbox">
-                            <input type="email" name="email" placeholder="Email"required>
-                            
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="inputbox">
-                            <textarea placeholder="Type your message"required></textarea>
-                            
+                            <textarea placeholder="Type your message" required></textarea>
                         </div>
                         <div class="inputbox">
                             <input type="submit" value="Send">
@@ -85,6 +84,8 @@
             </div>
         </section>
     </div>
+
+    <!-- JavaScript for menu toggle -->
     <script>
         let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
@@ -98,10 +99,11 @@
                 menuList.style.maxHeight = "0px";
             }
         }
-        
     </script>
+    <!-- FontAwesome for icons -->
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 
+    <!-- Footer section -->
     <footer>
         <div class="text">
             <span>Created By
@@ -110,6 +112,5 @@
         </div> 
     </footer>
     
-    
 </body>
-    
+</html>
